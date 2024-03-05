@@ -1,0 +1,89 @@
+@charset "UTF-8";
+:root {
+    --morado: #651e98;
+    --blanco-trans: #d0d0d0b0;
+    --verde-osc: #8B991F;
+    --verde-claro: #d2de7b;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+body {
+    background-image: url(../assets/img/escenarios/escenario1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    background-color: var(--morado);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h1 {
+        margin: 0 0.5em;
+        font-size: 1.5em;
+    }
+}
+
+#logo {
+    width: 4%;
+    min-width: 50px;
+    margin: 0.5em 1em;
+}
+
+main {
+    margin: 50px 5%;
+    min-height: fit-content;
+}
+
+main li {
+    padding: 1em;
+    margin: 0.1em;
+    color: #FFFFFF;
+    background-color: var(--verde-osc);
+}
+
+main li.visible {
+    background-color: var(--verde-claro);
+    color: black;
+}
+
+main .bloque {
+    width: 90%;
+    position: absolute;
+    padding: 2em;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all .5s ease;
+    background-color: var(--blanco-trans);
+}
+
+main .bloque.visible {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+footer {
+    background-color:  var(--morado);
+    color: white;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    font-size: 0.8em;
+}

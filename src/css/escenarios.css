@@ -1,14 +1,16 @@
 @charset "UTF-8";
 
-li {
+.punto {
   list-style-type: none;
-  background-color: lightgrey;
+  background-color: grey;
 }
 
 .carrousel {
   width: 90%;
   max-width: 120em;
-  padding: 2em;
+  /* padding: 2em; */
+  margin: auto;
+  overflow: hidden;
 }
 
 .carrousel .grande {
@@ -17,7 +19,7 @@ li {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 2em;
+  /* padding: 2em; */
   transition: all .5s ease;
   transform: translateX(0%);
 }
@@ -29,8 +31,8 @@ li {
 
 .carrousel .puntos {
   width: 100%;
-  margin: 1em 0 0;
-  padding: 0.4em;
+  /* margin: 1em 0 0; */
+  /* padding: 0.4em; */
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -44,5 +46,5 @@ li {
 }
 
 .carrousel .punto.activo {
-  background-color: lightcoral;
+  background-color: var(--morado);
 }
