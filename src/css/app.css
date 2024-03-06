@@ -6,7 +6,6 @@
 } */
 
 .acordeon {
-    width: 90%;
     height: 100%;
     max-width: 120em;
     padding: 2em;
@@ -31,13 +30,13 @@ video {
 #musica, #sonidos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .musicaElemento, .audioElemento { 
     text-align: center;
-    width: 30%;
-    margin: 0 1em;
+    width: 40%;
+    margin: 0.5em 1em;
 }
 
 audio {
@@ -56,6 +55,7 @@ section {
     margin: 0 0 1em;
     padding: 1em;
     border: 1px solid black;
+    background-color: #ffffff9f;
 }
 
 .acordeon .h2 {

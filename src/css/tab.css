@@ -62,18 +62,18 @@ main li.visible {
     color: black;
 }
 
-main .bloque {
+main .tabs {
     width: 90%;
     position: absolute;
     padding: 2em;
     opacity: 0;
-    transform: translateY(50%);
+    transform: translateY(25%);
     transition: all .5s ease;
     background-color: var(--blanco-trans);
     z-index: 0;
 }
 
-main .bloque.visible {
+main .tabs.visible {
     opacity: 1;
     transform: translateY(0%);
     z-index: 100;
