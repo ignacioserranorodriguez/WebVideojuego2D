@@ -70,11 +70,13 @@ main .bloque {
     transform: translateY(50%);
     transition: all .5s ease;
     background-color: var(--blanco-trans);
+    z-index: 0;
 }
 
 main .bloque.visible {
     opacity: 1;
     transform: translateY(0%);
+    z-index: 100;
 }
 
 footer {
