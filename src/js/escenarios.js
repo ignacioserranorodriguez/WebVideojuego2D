@@ -1,7 +1,7 @@
 'use strict'
 
-const grande    = document.querySelector('.grande')
-const punto     = document.querySelectorAll('.punto')
+const grande = document.querySelector('.grande')
+const punto = document.querySelectorAll('.punto')
 
 
 punto.forEach( ( cadaPunto , i )=> {
