@@ -16,12 +16,6 @@
   padding: 1em 0;
 }
 
-@media (max-width: 450px){
-  .ul {
-      width: 80%;
-  }
-}
-
 .ul .light {
   display: flex;
   justify-content: center;
@@ -93,4 +87,10 @@
     width: 100%;
   }
 
+}
+
+@media (max-width: 450px){
+  .ul {
+      width: 100%;
+  }
 }

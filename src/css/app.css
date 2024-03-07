@@ -76,3 +76,13 @@ section {
 .acordeon .bloque.activo .contenido {
     max-height: 100%;
 }
+
+@media only screen and (max-width: 768px) {
+    .acordeon {
+        padding: 0;
+    }
+
+    .musicaElemento, .audioElemento {
+        width: 90%;
+    }
+}
