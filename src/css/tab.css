@@ -64,6 +64,7 @@ main li.visible {
 
 main .tabs {
     width: 90%;
+    display: none;
     position: absolute;
     padding: 2em;
     opacity: 0;
@@ -74,6 +75,7 @@ main .tabs {
 }
 
 main .tabs.visible {
+    display: block;
     opacity: 1;
     transform: translateY(0%);
     z-index: 100;
@@ -98,5 +100,19 @@ footer {
 
     h2 {
         text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    body {
+        font-size: 18px;
+    }
+
+    main {
+        margin: 50px 15%;
+    }
+
+    main .tabs {
+        width: 70%;
     }
 }
