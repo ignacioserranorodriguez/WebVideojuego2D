@@ -8,6 +8,7 @@
 .carrousel {
   width: 90%;
   max-width: 120em;
+  /* padding: 2em; */
   margin: auto;
   overflow: hidden;
 }
@@ -18,6 +19,7 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  /* padding: 2em; */
   transition: all .5s ease;
   transform: translateX(0%);
 }
@@ -28,6 +30,8 @@
 
 .carrousel .puntos {
   width: 100%;
+  /* margin: 1em 0 0; */
+  /* padding: 0.4em; */
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -44,20 +48,9 @@
   background-color: var(--morado);
 }
 
-@media screen and (max-width: 1200px) {
+/*CAMBIA EL TAMAÑO DE IMAGEN PARA QUE SE ADAPTE A CHROM*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
   .carrousel .img {
-    width: calc( 50% - 2em);
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .carrousel .img {
-    width: calc( 75% - 2em);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .carrousel .img {
-    width: calc( 100% - 2em);
+    width: calc( 25% - 2em);
   }
 }
